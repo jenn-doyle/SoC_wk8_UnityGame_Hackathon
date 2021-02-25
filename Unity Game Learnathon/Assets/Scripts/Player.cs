@@ -7,23 +7,27 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     private Vector2 targetPos;
     public float Moveup;
+
     public float speed; 
+    public float heightMax; 
+    public float heightMin;
+
 
     private void Update()
     {
 
-        transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime); // do we need deltaTime? Small group, not widely distributed. :) 
 
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < heightMax) 
         {
 
             targetPos = new Vector2(transform.position.x, transform.position.y + Moveup);
             // transform.position = targetPos;
         }
-        else if (Input.GetKeyDown(KeyCode.DownArrow))
+        else if (Input.GetKeyDown(KeyCode.DownArrow)  && transform.position.y > heightMin)
         {
             targetPos = new Vector2(transform.position.x, transform.position.y - Moveup);
-            // tran sform.position = targetPos;
+            // tran sform.position = targetPos; 
         
         }
     }
