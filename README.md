@@ -56,7 +56,7 @@ Parallax: https://assetstore.unity.com/packages/2d/textures-materials/tiles/para
 
 Sky * nice one: https://assetstore.unity.com/packages/2d/textures-materials/sky/farland-skies-cloudy-crown-60004
 
-Explosion: https://assetstore.unity.com/packages/2d/textures-materials/2d-flat-explosion-66932
+
 
 Sky * nice one: https://assetstore.unity.com/packages/2d/textures-materials/sky/farland-skies-cloudy-crown-60004
 
@@ -79,7 +79,10 @@ Sounds simple : https://assetstore.unity.com/packages/audio/sound-fx/minimal-ui-
 
 
 Sparkle:
+
 https://assetstore.unity.com/packages/vfx/particles/cool-visual-effects-part-1-urp-support-176571
 Small objects: https://assetstore.unity.com/packages/2d/environments/2d-game-starter-assets-24626
 
 Obstacles: https://assetstore.unity.com/packages/2d/textures-materials/planets-with-space-background-in-flat-style-95983
+
+Explosion: https://assetstore.unity.com/packages/2d/textures-materials/2d-flat-explosion-66932
