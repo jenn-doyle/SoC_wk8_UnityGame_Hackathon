@@ -4,20 +4,11 @@ using UnityEngine;
 
 public class SpawnPattern : MonoBehaviour
 {
-    
-public GameObject obstacle;
+    public GameObject obstacle;
 
-void Start () {
+    void Start()
+    {
 
-    Instantiate(obstacle, transform.position, Quaternion.identity);
-
-
-
-}
-
-
-
-
-
-
+        Instantiate(obstacle, transform.position, Quaternion.identity);
+    }
 }
