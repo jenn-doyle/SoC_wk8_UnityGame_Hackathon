@@ -60,7 +60,7 @@ Sky * nice one: https://assetstore.unity.com/packages/2d/textures-materials/sky/
 
 Sky * nice one: https://assetstore.unity.com/packages/2d/textures-materials/sky/farland-skies-cloudy-crown-60004
 
-Parallax mountain with layers: https://assetstore.unity.com/packages/2d/environments/night-mountain-lake-seamless-127703
+##Parallax mountain with layers: https://assetstore.unity.com/packages/2d/environments/night-mountain-lake-seamless-127703
 
 
 
@@ -80,9 +80,25 @@ Sounds simple : https://assetstore.unity.com/packages/audio/sound-fx/minimal-ui-
 
 Sparkle:
 
-https://assetstore.unity.com/packages/vfx/particles/cool-visual-effects-part-1-urp-support-176571
+each time reach 5 points??? ##https://assetstore.unity.com/packages/vfx/particles/cool-visual-effects-part-1-urp-support-176571
 Small objects: https://assetstore.unity.com/packages/2d/environments/2d-game-starter-assets-24626
 
-Obstacles: https://assetstore.unity.com/packages/2d/textures-materials/planets-with-space-background-in-flat-style-95983
+## Obstacles: https://assetstore.unity.com/packages/2d/textures-materials/planets-with-space-background-in-flat-style-95983
 
 Explosion: https://assetstore.unity.com/packages/2d/textures-materials/2d-flat-explosion-66932
+
+
+////////
+sprites:
+angry men : https://craftpix.net/freebies/free-citizen-artist-astrologer-4-direction-npc-character-pack/
+
+bald guy: https://craftpix.net/freebies/free-warrior-4-direction-character-sprites/
+
+aliens: https://craftpix.net/freebies/2d-game-alien-character-free-sprite/
+
+spiky dude: https://craftpix.net/freebies/free-golems-chibi-2d-game-sprites/
+
+tiny people https://craftpix.net/freebies/free-pixel-art-tiny-hero-sprites/
+
+bg:
+forest 10/10 https://craftpix.net/freebies/free-horizontal-2d-game-backgrounds/
