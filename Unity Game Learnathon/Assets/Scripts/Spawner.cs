@@ -17,7 +17,7 @@ public class Spawner : MonoBehaviour
         {
             int rand = Random.Range(0, obstaclePatterns.Length);
             Debug.Log(rand);
-            //Instantiate(obstaclePatterns[rand], transform.position, Quaternion.identity);
+            Instantiate(obstaclePatterns[rand], transform.position, Quaternion.identity);
             timeBetweenSpawn = startTime;
             if (startTime > minimunTime){
                 startTime -= decreaseTimeBetweenSpawner;

@@ -100,6 +100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5964345294234966378}
   - component: {fileID: 5964345294234966381}
+  - component: {fileID: 8862697480691275796}
   m_Layer: 0
   m_Name: ObstaclePattern03
   m_TagString: Untagged
@@ -136,3 +137,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacle: {fileID: 0}
+--- !u!114 &8862697480691275796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5964345294234966380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f883fdd40328041873ae47729e47ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 2

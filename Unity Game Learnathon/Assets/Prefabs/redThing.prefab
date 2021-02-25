@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8436182215812411789}
   - component: {fileID: 8436182215812411790}
   - component: {fileID: 8436182215812411787}
+  - component: {fileID: -5960718539442317022}
   m_Layer: 0
   m_Name: redThing
   m_TagString: Untagged
@@ -113,3 +114,16 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.25
+--- !u!114 &-5960718539442317022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8436182215812411791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23f883fdd40328041873ae47729e47ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 10
