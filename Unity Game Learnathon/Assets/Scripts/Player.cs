@@ -8,37 +8,33 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     private Vector2 targetPos;
     public float Moveup;
-
-    public float speed; 
-    public float heightMax; 
+    public float speed;
+    public float heightMax;
     public float heightMin;
-
-    public int health = 3;
-
-    public Text HealthDisplay;
+    public int health;
+    public Text healthDisplay;
+    public GameObject gameOver;
 
 
     private void Update()
     {
-        HealthDisplay.text = health.ToString();
+        healthDisplay.text = health.ToString();
 
-        if (health<= 0) {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        if (health <= 0)
+        {
+            gameOver.SetActive(true);
+            Destroy(gameObject);
         }
 
         transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime); // do we need deltaTime? Small group, not widely distributed. :) 
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < heightMax) 
+        if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < heightMax)
         {
-
             targetPos = new Vector2(transform.position.x, transform.position.y + Moveup);
-            // transform.position = targetPos;
         }
-        else if (Input.GetKeyDown(KeyCode.DownArrow)  && transform.position.y > heightMin)
+        else if (Input.GetKeyDown(KeyCode.DownArrow) && transform.position.y > heightMin)
         {
             targetPos = new Vector2(transform.position.x, transform.position.y - Moveup);
-            // transform.position = targetPos; 
-        
         }
     }
 

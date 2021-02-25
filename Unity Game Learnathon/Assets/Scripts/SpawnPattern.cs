@@ -8,7 +8,6 @@ public class SpawnPattern : MonoBehaviour
 
     void Start()
     {
-
         Instantiate(obstacle, transform.position, Quaternion.identity);
     }
 }
