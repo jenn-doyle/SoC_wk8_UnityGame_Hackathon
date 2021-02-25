@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -17,6 +17,9 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        if (health<= 0) {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
 
         transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime); // do we need deltaTime? Small group, not widely distributed. :) 
 
@@ -29,7 +32,7 @@ public class Player : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.DownArrow)  && transform.position.y > heightMin)
         {
             targetPos = new Vector2(transform.position.x, transform.position.y - Moveup);
-            // tran sform.position = targetPos; 
+            // transform.position = targetPos; 
         
         }
     }

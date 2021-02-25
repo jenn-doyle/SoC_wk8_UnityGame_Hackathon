@@ -290,7 +290,7 @@ MonoBehaviour:
   speed: 100
   heightMax: 5
   heightMin: -5
-  health: 3
+  health: 5
 --- !u!212 &1897610829
 SpriteRenderer:
   m_ObjectHideFlags: 0
