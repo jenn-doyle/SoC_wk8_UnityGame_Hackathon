@@ -9,6 +9,8 @@ subway surfers but with skiers
 
 animated background, characters with effects
 
+Make it BEAUTIFUL
+
 3D rendered characters
 cohesive and insightful storyline
 
