@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     public float heightMax; 
     public float heightMin;
 
+    public int health = 3;
+
 
     private void Update()
     {
