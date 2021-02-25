@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -14,9 +15,13 @@ public class Player : MonoBehaviour
 
     public int health = 3;
 
+    public Text HealthDisplay;
+
 
     private void Update()
     {
+        HealthDisplay.text = health.ToString();
+
         if (health<= 0) {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }

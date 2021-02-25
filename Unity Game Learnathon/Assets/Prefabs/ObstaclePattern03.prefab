@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5964345293428380073}
-  - component: {fileID: 5964345293428380070}
+  - component: {fileID: 8454256413299821403}
   m_Layer: 0
   m_Name: SpawnPattern02
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 5964345294234966378}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5964345293428380070
+--- !u!114 &8454256413299821403
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5964345294147460132}
-  - component: {fileID: 5964345294147460133}
+  - component: {fileID: 4013255128703085358}
   m_Layer: 0
   m_Name: SpawnPattern01
   m_TagString: Untagged
@@ -76,7 +76,7 @@ Transform:
   m_Father: {fileID: 5964345294234966378}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5964345294147460133
+--- !u!114 &4013255128703085358
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -99,8 +99,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5964345294234966378}
-  - component: {fileID: 5964345294234966381}
   - component: {fileID: 8862697480691275796}
+  - component: {fileID: -9177668283459510462}
   m_Layer: 0
   m_Name: ObstaclePattern03
   m_TagString: Untagged
@@ -124,19 +124,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5964345294234966381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5964345294234966380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2384c4b6bc6c3d24cacb80df1788a91e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  obstacle: {fileID: 0}
 --- !u!114 &8862697480691275796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,3 +137,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 2
+--- !u!114 &-9177668283459510462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5964345294234966380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2384c4b6bc6c3d24cacb80df1788a91e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacle: {fileID: 0}
