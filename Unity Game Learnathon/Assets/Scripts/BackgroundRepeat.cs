@@ -6,7 +6,8 @@ public class BackgroundRepeat : MonoBehaviour
 {
     public float speed;
     public float Xend;
-    public float length;
+    public float length, startpos;
+    public GameObject cam;
 
     void Start()
     { length = GetComponent<SpriteRenderer>().bounds.size.x * 2; }
