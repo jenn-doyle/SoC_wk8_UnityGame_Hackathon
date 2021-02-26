@@ -10,9 +10,4 @@ public class Annihilator : MonoBehaviour
         Destroy(gameObject, lifetime);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
