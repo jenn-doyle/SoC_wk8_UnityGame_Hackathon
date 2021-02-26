@@ -16,10 +16,12 @@ public class Player : MonoBehaviour
     public GameObject upEffect; // the movement up/down particle effect
     public GameObject downEffect;
     public GameObject gameOver;
+    //public GameObject gameStart;
 
     private void Update()
     {
-        
+        //gameStart.SetActive(true);
+
         healthDisplay.text = health.ToString();
 
         if (health <= 0)
