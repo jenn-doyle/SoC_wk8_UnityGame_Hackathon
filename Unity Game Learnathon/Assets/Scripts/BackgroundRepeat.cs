@@ -6,15 +6,18 @@ public class BackgroundRepeat : MonoBehaviour
 {
     public float speed;
     public float Xend;
-    public float Xstart;
+    public float length;
+
+    void Start()
+    { length = GetComponent<SpriteRenderer>().bounds.size.x * 2; }
 
     private void Update()
     {
         transform.Translate(Vector2.left * speed * Time.deltaTime);
         if (transform.position.x < Xend)
         {
-            Vector2 pos = new Vector2(Xstart, transform.position.y);
-            transform.position = pos;
+           transform.position =  new Vector2(transform.position.x + length, transform.position.y);
+        
         }
     }
 }
