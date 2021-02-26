@@ -4,20 +4,19 @@ using UnityEngine;
 
 public class BackgroundRepeat : MonoBehaviour
 {
+
+
     public float speed;
     public float Xend;
-    public float length;
-
-    void Start()
-    { length = GetComponent<SpriteRenderer>().bounds.size.x * 2; }
+    public float Xstart;
 
     private void Update()
     {
         transform.Translate(Vector2.left * speed * Time.deltaTime);
         if (transform.position.x < Xend)
         {
-           transform.position =  new Vector2(transform.position.x + length, transform.position.y);
-        
+            Vector2 pos = new Vector2(Xstart, transform.position.y);
+            transform.position = pos;
         }
     }
 }

@@ -134,5 +134,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2384c4b6bc6c3d24cacb80df1788a91e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 8436182215812411791, guid: 1d6856a39ba862e4e9fdc4d3f54f8837,
+  obstacle: {fileID: 7124605228703732983, guid: 9e9d801de35874d1baca64599a547298,
     type: 3}
