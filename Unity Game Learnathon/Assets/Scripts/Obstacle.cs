@@ -2,6 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/* 
+1) add png into game
+2) link to anhilator script
+3) Add obstacle tag
+4) link obstacle script
+5) do collider 2d stuff
+6) save as prefab
+7) give prefab to each spawn pattern
+*/
+/*
+TAGS:
+-Obstacle 
+-
+SCRIPTS: 
+- anihilator lifetime = 10
+- Obstacle scripts damage = 1, speed = 7 
+- collider 2d circle istrigger= true
+
+-is a prefab
+    -EVERY SpawnPattern has prefab
+*/
+
 public class Obstacle : MonoBehaviour
 {
     public int damage = 1;
@@ -24,7 +46,6 @@ public class Obstacle : MonoBehaviour
             other.GetComponent<Player>().health -= damage;
             Debug.Log(other.GetComponent<Player>().health);
             Destroy(gameObject);
-
         }
     }
 
