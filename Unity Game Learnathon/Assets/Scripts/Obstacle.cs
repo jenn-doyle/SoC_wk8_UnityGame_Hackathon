@@ -32,6 +32,7 @@ public class Obstacle : MonoBehaviour
 
     public GameObject effect;
 
+
     private void Update()
     {
         transform.Translate(Vector2.left * speed * Time.deltaTime);
