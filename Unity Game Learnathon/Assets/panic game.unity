@@ -146,7 +146,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 105581749}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.37, y: 0, z: -0.91745234}
+  m_LocalPosition: {x: 17.87, y: -0.06, z: -0.91745234}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -376,6 +376,10 @@ MonoBehaviour:
   heightMin: -5
   health: 5
   healthDisplay: {fileID: 549687191}
+  upEffect: {fileID: 5027513277523927234, guid: 0d51cdf111376d544ad385e70932e086,
+    type: 3}
+  downEffect: {fileID: 5423880944655614815, guid: 5a861655101dbed43ac9b665251872a4,
+    type: 3}
   gameOver: {fileID: 1491244693}
 --- !u!50 &499466663
 Rigidbody2D:
@@ -909,6 +913,8 @@ MonoBehaviour:
   heightMin: -5
   health: 5
   healthDisplay: {fileID: 549687191}
+  upEffect: {fileID: 0}
+  downEffect: {fileID: 0}
   gameOver: {fileID: 1491244693}
 --- !u!212 &1897610829
 SpriteRenderer:
@@ -1055,7 +1061,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 136.4, y: -67.8}
+  m_AnchoredPosition: {x: 100, y: -74}
   m_SizeDelta: {x: 193.37628, y: 69.79387}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1957412697

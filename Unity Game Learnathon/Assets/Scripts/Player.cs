@@ -13,11 +13,14 @@ public class Player : MonoBehaviour
     public float heightMin;
     public int health;
     public Text healthDisplay;
+    public GameObject upEffect; // the movement up/down particle effect
+    public GameObject downEffect;
     public GameObject gameOver;
 
 
     private void Update()
     {
+        
         healthDisplay.text = health.ToString();
 
         if (health <= 0)
@@ -30,10 +33,12 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && transform.position.y < heightMax)
         {
+            Instantiate(upEffect, transform.position, Quaternion.identity);
             targetPos = new Vector2(transform.position.x, transform.position.y + Moveup);
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow) && transform.position.y > heightMin)
         {
+            Instantiate(downEffect, transform.position, Quaternion.identity);
             targetPos = new Vector2(transform.position.x, transform.position.y - Moveup);
         }
     }
