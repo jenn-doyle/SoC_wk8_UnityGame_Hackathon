@@ -17,7 +17,6 @@ public class Player : MonoBehaviour
     public GameObject downEffect;
     public GameObject gameOver;
 
-
     private void Update()
     {
         
