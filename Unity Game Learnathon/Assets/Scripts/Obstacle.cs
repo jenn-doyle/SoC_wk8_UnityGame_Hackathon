@@ -30,6 +30,8 @@ public class Obstacle : MonoBehaviour
 
     public float speed;
 
+    public GameObject effect;
+
     private void Update()
     {
         transform.Translate(Vector2.left * speed * Time.deltaTime);
@@ -39,6 +41,7 @@ public class Obstacle : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Instantiate(effect, transform.position, Quaternion.identity);
             //player takes damage
             //need to add public int health * 3; to player script
             //add health to player inspector
