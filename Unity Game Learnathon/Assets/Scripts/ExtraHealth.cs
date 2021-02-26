@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ExtraHealth : MonoBehaviour
 {
-    public int addHealth = 1;
+    public int HealthMinusTwo = 2;
     public float speed;
 
     public GameObject effect;
@@ -20,7 +20,7 @@ public class ExtraHealth : MonoBehaviour
         {
             Instantiate(effect, transform.position, Quaternion.identity);
            
-            other.GetComponent<Player>().health += addHealth;
+            other.GetComponent<Player>().health -= HealthMinusTwo;
             Destroy(gameObject);
         }
     }
