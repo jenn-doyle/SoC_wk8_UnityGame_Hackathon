@@ -1132,6 +1132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   scoreDisplay: {fileID: 1957412697}
+  player: {fileID: 499466662}
 --- !u!50 &2118295161
 Rigidbody2D:
   serializedVersion: 4

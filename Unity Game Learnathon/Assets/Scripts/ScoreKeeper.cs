@@ -7,6 +7,8 @@ public class ScoreKeeper : MonoBehaviour
 {
     public int score;
     public Text scoreDisplay;
+    public Player player;
+
     private void Update()
     {
         scoreDisplay.text = score.ToString();
@@ -17,8 +19,13 @@ public class ScoreKeeper : MonoBehaviour
     {
         if (other.CompareTag("Obstacle"))
         {
-            score++;
-            Debug.Log(score);
+            if (player.health > 0)
+            {
+                score++;
+                Debug.Log(score);
+            }
         }
     }
 }
+
+//before increasing score of 1 make an if statement checking whether the player's health is greater than 0 !
