@@ -31,7 +31,10 @@ public class Obstacle : MonoBehaviour
     public float speed;
 
     public GameObject effect;
-
+    private Shaker shaker;
+    void Start(){
+        shaker = GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<Shaker>();
+    }
 
     private void Update()
     {
@@ -40,6 +43,7 @@ public class Obstacle : MonoBehaviour
     // Start is called before the first frame update
     void OnTriggerEnter2D(Collider2D other)
     {
+            shaker.CamShake();
         if (other.CompareTag("Player"))
         {
             Instantiate(effect, transform.position, Quaternion.identity);
